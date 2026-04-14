@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-syne), sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+  --shadow-brutal: 15px 15px 0 #000;
+}
+
+:root {
+  --ink: #050505;
+  --paper: #f4f0ea;
+}
+
+* {
+  box-sizing: border-box;
+  border-color: rgb(0 0 0 / 0.8);
+  border-radius: 0 !important;
+}
+
+html {
+  scroll-behavior: auto;
+  background: var(--paper);
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--ink);
+  background: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  color: #fff;
+  background: #050505;
+}
+
+.grid-border {
+  border: 1px solid rgb(0 0 0 / 0.8);
+}
+
+.display-tight {
+  font-size: clamp(3rem, 10vw, 12rem);
+  letter-spacing: -0.06em;
+  line-height: 0.86;
+}
+
+.section-title {
+  font-size: clamp(2.75rem, 8vw, 9rem);
+  letter-spacing: -0.06em;
+  line-height: 0.88;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
